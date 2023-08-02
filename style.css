@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import 'animate.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0065c3;
+    height: 90px;
+    display: flex !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.Pepsi-logo {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px 0px 50px;
+    /* width: 60px;
+    height: 60px; */
+}
+
+.Pepsi-logo>img {
+    width: 60px;
+    height: 60px;
+    transition: 0.2s ease-in-out;
+}
+
+.Pepsi-logo>img:hover{
+    transform: rotate(360deg);
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+    /* animation: jello;
+    animation-duration: 1s; */
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    flex-grow: 1;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+nav>ul>li {
+    margin-left: 50px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    margin-right: 50px;
+    width: 15%;
+}
+
+.btn>a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 100px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.btn>a:hover {
+    background-color: #fff;
+    color: #0065c3;
+    transform: scale(1.1);
+}
+
+.mobile-nav-btn {
+    display: none;
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.mobile-nav-icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+.sec-1 {
+    width: 100%;
+    background-image: url(./Images/blue-image-background.png);
+    overflow: hidden;
+    height: 678px;
+    margin-top: 90px;
+    max-height: 960px;
+}
+
+.sec-1-parent-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 678px;
+    /* flex-wrap: wrap; */
+    /* width: 70%; */
+    /* margin: 0px 10%; */
+}
+
+.sec-1-child-2-div{
+    /* flex-grow: 1; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 77px;
+    margin-left: 20%;
+}
+
+.sec-1-child-2-div>img{
+    width: 400px;
+    /* height: 500; */
+}
+
+.sec-1-child-1-div {
+    display: inline;
+    justify-content: center;
+    /* width: 70%; */
+    /* flex-grow: 1; */
+    margin-right: 20%;
+}
+
+.sec-1-img-div{
+    display: flex;
+    justify-content: center;
+    /* font-size: 16px; */
+    /* margin: 50px 0px; */
+    /* width: 70%; */
+}
+
+.sec-1-img-div > img{
+    display: flex;
+    justify-content: center;
+    /* font-size: 16px; */
+    /* margin: 50px 0px; */
+    /* width: 70%; */
+}
+
+.sec-1-anchor-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 50px 0px;
+    /* width: 70%; */
+}
+
+.sec-1-anchor-div>a {
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    padding: 8px;
+    border-radius: 100px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sec-1-anchor-div>a:hover {
+    color: #0065c3;
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.sec-1-para-div{
+    display: flex;
+    justify-content: center;
+    /* font-size: 16px; */
+    /* margin: 50px 0px; */
+    /* width: 70%; */
+}
+
+.sec-1-para-div > p{
+    width: 600px;
+    font-size: small;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+
+.sec {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    height: 678px;
+    max-height: 960px;
+}
+
+.sec-2-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sec-2-div-1{
+    width: 50%;
+    /* height: 500px; */
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    justify-content: start;
+    /* position: relative; */
+}
+
+.sec-2-div-1 > .img-1{
+    height: 800px;
+    /* position: absolute; */
+    top: 10px;
+}
+
+.sec-2-div-1 > .img-2{
+    width: 186px;
+    height: 186px;
+    position: absolute;
+    left: 510px;
+    top: 800px;
+}
+
+.sec-2-div-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-2-div-2-div-1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sec-2-div-2-div-1>img{
+    width: 100%
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.sec-2-div-2-div-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sec-2-div-2-div-2>img{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-2-div-2-div-3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.div-3-img{
+     position: relative;
+     /* width: 50%; */
+}
+
+.div-3-img>img{
+    height: 100px;
+    /* position: relative; */
+    margin: 10px;
+}
+
+.play-Btn{
+    position: absolute;
+    z-index: 999;
+    top: 15%;
+    right: 30%;
+    width: 100px;
+    height: 80px;
+    background-color: #0065c3;
+    opacity: 70%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-Btn>svg{
+    color: #fff;
+    height: 35%;
+    width: 35%;
+}
+
+.play-Btn>span{
+    margin: 10px 0px 0px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.video-caption{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    /* text-align: left; */
+    margin: 10px;
+}
+
+
+/* --------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background-color: #0065c3;
+        height: 100px;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    .Pepsi-logo {
+        width: 40px;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+
+    }
+
+    .Pepsi-logo>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        display: grid;
+        align-content: center;
+        justify-content: end;
+        z-index: 999;
+        margin-right: 25px;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile-nav-btn>a {
+        font-size: 16px;
+        font-weight: 800;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    } */
+
+     .sec-1-child-1-div > img{
+        position: fixed;
+        top: 500px;
+    }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .mobile-navbar-btn{
+        display: block;
+        display: grid;
+        align-content: center;
+        justify-content: end;
+        z-index: 999;
+
+    }
+
+    header{
+        position: relative;
+        z-index: 1;
+    }
+
+    nav{
+        width: 100%;
+        height: 100vh;
+        background-color: #0065c3;
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     nav > ul{
+        flex-direction: column;
+        text-align: center;
+     }
+
+     nav > ul > li{
+        height: 50px;
+     }
+
+     nav > ul > li > a{
+        font-size: 30px;
+     } */
+
+    /* nav > ul > li {
+      margin-left: 20px;
+    }
+    nav > ul > li > a {
+      font-size: 14px;
+    }
+    .btn > a {
+      font-size: 12px;
+      padding: 4px 10px;
+      width: 150px;
+
+    } */
+}
