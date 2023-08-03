@@ -236,6 +236,10 @@ nav>ul>li>a {
     overflow: hidden;
     height: 678px;
     max-height: 960px;
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .sec-2-main-div{
@@ -258,18 +262,22 @@ nav>ul>li>a {
 .sec-2-div-1 > .img-1{
     height: 800px;
     /* position: absolute; */
-    top: 10px;
+    /* top: 10px; */
+    margin-left: 210px;
 }
 
 .sec-2-div-1 > .img-2{
     width: 186px;
     height: 186px;
     position: absolute;
-    left: 510px;
-    top: 800px;
+    left: 732px;
+    top: 850px;
+    
 }
 
 .sec-2-div-2{
+    padding-top: 80px;
+    padding-right: 361px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -277,22 +285,30 @@ nav>ul>li>a {
     flex-direction: column;
 }
 
+/* .div-2-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 678px;
+} */
+
 .sec-2-div-2-div-1{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
 .sec-2-div-2-div-1>img{
-    width: 100%
+    width: 500px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
 
 .sec-2-div-2-div-2{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,7 +316,7 @@ nav>ul>li>a {
 }
 
 .sec-2-div-2-div-2>img{
-    width: 75%;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,12 +333,17 @@ nav>ul>li>a {
 .div-3-img{
      position: relative;
      /* width: 50%; */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .div-3-img>img{
     height: 100px;
     /* position: relative; */
     margin: 10px;
+    
 }
 
 .play-Btn{
@@ -358,10 +379,13 @@ nav>ul>li>a {
 
 .video-caption{
     color: #fff;
+    width: 80%;
     font-size: 12px;
     font-weight: 800;
-    /* text-align: left; */
-    margin: 10px;
+    text-align: center;
+    margin: 0px 10px;
+    height: 50px;
+    
 }
 
 /* --------------------------------- */
