@@ -429,11 +429,11 @@ nav>ul>li>a {
     padding-right: 10%;
 }
 
-.second-div-img{
+.second-2-div-img{
     width: 500px;
 }
 
-.second-div-img>img{
+.second-2-div-img>img{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -759,12 +759,12 @@ right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 87%;
 }
 
 .second-div-img{
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 15);
@@ -789,6 +789,132 @@ right: 0;
    transform: scale(1.2 ) rotate(10deg);
    opacity: 50%;
 }
+
+.footer-section{
+    width: 100%;
+    height: 100%;
+    background-color: #0065c3;
+    padding: 50px;
+    /* position: fixed; */
+    /* bottom: 0px; */
+}
+
+.footer-main-div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.footer-main-div-1st-div{
+    width: 15%;
+    height: 100%;
+}
+
+.footer-Pepsi-logo {
+    width: 50%;
+    /* height: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px 0px 50px;
+    /* width: 60px;
+    height: 60px; */
+}
+
+.footer-Pepsi-logo>img {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-Pepsi-logo>img:hover {
+    transform: rotate(360deg);
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+    /* animation: jello;
+    animation-duration: 1s; */
+}
+
+.footer-main-div-2nd-div{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-ul-div>ul{
+    list-style: none;
+    /* padding: 20px; */
+}
+
+.footer-ul-div>ul>li{
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+.footer-ul-div>ul>li>a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    transition: 0.2s;
+    text-transform: uppercase;
+    
+}
+
+.footer-ul-div>ul>li>a:hover{
+    opacity: 70%;
+}
+
+.footer-main-div-3rd-div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-footer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-footer>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 100px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.btn-footer>a:hover {
+    background-color: #fff;
+    color: #0065c3;
+    transform: scale(1.1);
+}
+
+.footer-social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links-div{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+
 
 
 
